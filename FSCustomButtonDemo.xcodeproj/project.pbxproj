@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A35134001EEF7925000313CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A35133FF1EEF7925000313CB /* main.m */; };
+		A35134031EEF7925000313CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A35134021EEF7925000313CB /* AppDelegate.m */; };
+		A35134061EEF7925000313CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A35134051EEF7925000313CB /* ViewController.m */; };
+		A35134091EEF7925000313CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35134071EEF7925000313CB /* Main.storyboard */; };
+		A351340B1EEF7925000313CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A351340A1EEF7925000313CB /* Assets.xcassets */; };
+		A351340E1EEF7925000313CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A351340C1EEF7925000313CB /* LaunchScreen.storyboard */; };
+		A35134181EEF7987000313CB /* FSCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A35134171EEF7987000313CB /* FSCustomButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A35133FB1EEF7925000313CB /* FSCustomButtonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSCustomButtonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A35133FF1EEF7925000313CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A35134011EEF7925000313CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A35134021EEF7925000313CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A35134041EEF7925000313CB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A35134051EEF7925000313CB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A35134081EEF7925000313CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A351340A1EEF7925000313CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A351340D1EEF7925000313CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A351340F1EEF7925000313CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A35134161EEF7987000313CB /* FSCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCustomButton.h; sourceTree = "<group>"; };
+		A35134171EEF7987000313CB /* FSCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCustomButton.m; sourceTree = "<group>"; };
+		A351341A1EEFC724000313CB /* FSCommenDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSCommenDefine.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A35133F81EEF7925000313CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A35133F21EEF7924000313CB = {
+			isa = PBXGroup;
+			children = (
+				A35133FD1EEF7925000313CB /* FSCustomButtonDemo */,
+				A35133FC1EEF7925000313CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A35133FC1EEF7925000313CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A35133FB1EEF7925000313CB /* FSCustomButtonDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A35133FD1EEF7925000313CB /* FSCustomButtonDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A35134151EEF794D000313CB /* FSCustomBUtton */,
+				A35134011EEF7925000313CB /* AppDelegate.h */,
+				A35134021EEF7925000313CB /* AppDelegate.m */,
+				A35134041EEF7925000313CB /* ViewController.h */,
+				A35134051EEF7925000313CB /* ViewController.m */,
+				A35134071EEF7925000313CB /* Main.storyboard */,
+				A351340A1EEF7925000313CB /* Assets.xcassets */,
+				A351340C1EEF7925000313CB /* LaunchScreen.storyboard */,
+				A351340F1EEF7925000313CB /* Info.plist */,
+				A35133FE1EEF7925000313CB /* Supporting Files */,
+			);
+			path = FSCustomButtonDemo;
+			sourceTree = "<group>";
+		};
+		A35133FE1EEF7925000313CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A35133FF1EEF7925000313CB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A35134151EEF794D000313CB /* FSCustomBUtton */ = {
+			isa = PBXGroup;
+			children = (
+				A351341A1EEFC724000313CB /* FSCommenDefine.h */,
+				A35134161EEF7987000313CB /* FSCustomButton.h */,
+				A35134171EEF7987000313CB /* FSCustomButton.m */,
+			);
+			path = FSCustomBUtton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A35133FA1EEF7925000313CB /* FSCustomButtonDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A35134121EEF7925000313CB /* Build configuration list for PBXNativeTarget "FSCustomButtonDemo" */;
+			buildPhases = (
+				A35133F71EEF7925000313CB /* Sources */,
+				A35133F81EEF7925000313CB /* Frameworks */,
+				A35133F91EEF7925000313CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSCustomButtonDemo;
+			productName = FSCustomButtonDemo;
+			productReference = A35133FB1EEF7925000313CB /* FSCustomButtonDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A35133F31EEF7924000313CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FS;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = fengshun;
+				TargetAttributes = {
+					A35133FA1EEF7925000313CB = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = P5NAKU59Y6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A35133F61EEF7924000313CB /* Build configuration list for PBXProject "FSCustomButtonDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A35133F21EEF7924000313CB;
+			productRefGroup = A35133FC1EEF7925000313CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A35133FA1EEF7925000313CB /* FSCustomButtonDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A35133F91EEF7925000313CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A351340E1EEF7925000313CB /* LaunchScreen.storyboard in Resources */,
+				A351340B1EEF7925000313CB /* Assets.xcassets in Resources */,
+				A35134091EEF7925000313CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A35133F71EEF7925000313CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A35134061EEF7925000313CB /* ViewController.m in Sources */,
+				A35134031EEF7925000313CB /* AppDelegate.m in Sources */,
+				A35134001EEF7925000313CB /* main.m in Sources */,
+				A35134181EEF7987000313CB /* FSCustomButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A35134071EEF7925000313CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A35134081EEF7925000313CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A351340C1EEF7925000313CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A351340D1EEF7925000313CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A35134101EEF7925000313CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A35134111EEF7925000313CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A35134131EEF7925000313CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P5NAKU59Y6;
+				INFOPLIST_FILE = FSCustomButtonDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huim.FSCustomButtonDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A35134141EEF7925000313CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P5NAKU59Y6;
+				INFOPLIST_FILE = FSCustomButtonDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huim.FSCustomButtonDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A35133F61EEF7924000313CB /* Build configuration list for PBXProject "FSCustomButtonDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A35134101EEF7925000313CB /* Debug */,
+				A35134111EEF7925000313CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A35134121EEF7925000313CB /* Build configuration list for PBXNativeTarget "FSCustomButtonDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A35134131EEF7925000313CB /* Debug */,
+				A35134141EEF7925000313CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A35133F31EEF7924000313CB /* Project object */;
+}
