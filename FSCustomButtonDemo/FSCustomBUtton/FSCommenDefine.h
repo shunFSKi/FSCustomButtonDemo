@@ -1,14 +1,26 @@
-//
-//  FSCommenDefine.h
-//  FSCustomButtonDemo
-//
-//  Created by huim on 2017/6/13.
-//  Copyright © 2017年 fengshun. All rights reserved.
-//
 
+#import <UIKit/UIKit.h>
 #import <objc/runtime.h>
+
 #define ScreenScale ([[UIScreen mainScreen] scale])
 
+#pragma mark - Clang
+
+#define ArgumentToString(macro) #macro
+#define ClangWarningConcat(warning_name) ArgumentToString(clang diagnostic ignored warning_name)
+
+// 参数可直接传入 clang 的 warning 名，warning 列表参考：http://fuckingclangwarnings.com/
+#define BeginIgnoreClangWarning(warningName) _Pragma("clang diagnostic push") _Pragma(ClangWarningConcat(#warningName))
+#define EndIgnoreClangWarning _Pragma("clang diagnostic pop")
+
+#define BeginIgnorePerformSelectorLeaksWarning BeginIgnoreClangWarning(-Warc-performSelector-leaks)
+#define EndIgnorePerformSelectorLeaksWarning EndIgnoreClangWarning
+
+#define BeginIgnoreAvailabilityWarning BeginIgnoreClangWarning(-Wpartial-availability)
+#define EndIgnoreAvailabilityWarning EndIgnoreClangWarning
+
+#define BeginIgnoreDeprecatedWarning BeginIgnoreClangWarning(-Wdeprecated-declarations)
+#define EndIgnoreDeprecatedWarning EndIgnoreClangWarning
 #pragma mark - 方法-C对象、结构操作
 
 /**

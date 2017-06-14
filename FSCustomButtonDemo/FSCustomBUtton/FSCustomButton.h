@@ -19,4 +19,17 @@ typedef enum : NSUInteger {
 
 @property (nonatomic, assign) FSCustomButtonLayoutType buttonLayoutType;
 
+
+@property(nonatomic, assign) BOOL adjustsTitleTintColorAutomatically;
+
+@property(nonatomic, assign) BOOL adjustsImageTintColorAutomatically;
+
+@property(nonatomic, assign) BOOL adjustsButtonWhenHighlighted;
+
+@property(nonatomic, assign) BOOL adjustsButtonWhenDisabled;
+
+@property(nonatomic, strong) UIColor *highlightedBackgroundColor;
+
+@property(nonatomic, strong) UIColor *highlightedBorderColor;
+
 @end
