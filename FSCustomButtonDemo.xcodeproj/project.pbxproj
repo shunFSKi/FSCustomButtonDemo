@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3424BD61F009FFC005CD7E2 /* my_ic_coupon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3424BD51F009FFC005CD7E2 /* my_ic_coupon@3x.png */; };
+		A3424BD81F00A003005CD7E2 /* my_ic_coupon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3424BD71F00A003005CD7E2 /* my_ic_coupon@2x.png */; };
 		A35134001EEF7925000313CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A35133FF1EEF7925000313CB /* main.m */; };
 		A35134031EEF7925000313CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A35134021EEF7925000313CB /* AppDelegate.m */; };
 		A35134061EEF7925000313CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A35134051EEF7925000313CB /* ViewController.m */; };
@@ -14,12 +16,16 @@
 		A351340B1EEF7925000313CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A351340A1EEF7925000313CB /* Assets.xcassets */; };
 		A351340E1EEF7925000313CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A351340C1EEF7925000313CB /* LaunchScreen.storyboard */; };
 		A35134181EEF7987000313CB /* FSCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A35134171EEF7987000313CB /* FSCustomButton.m */; };
+		A38C0DB91EF6602B00822CAA /* btn_voice_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A38C0DB81EF6602B00822CAA /* btn_voice_play@2x.png */; };
+		A38C0DBB1EF6679700822CAA /* graphicreview_group_star_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A38C0DBA1EF6679700822CAA /* graphicreview_group_star_red@2x.png */; };
 		A3CF645E1EF0DB86009BE03C /* jkj_sort_ic_baby_s.png in Resources */ = {isa = PBXBuildFile; fileRef = A3CF645D1EF0DB86009BE03C /* jkj_sort_ic_baby_s.png */; };
 		A3CF64601EF0E44B009BE03C /* home_ic_pick@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3CF645F1EF0E44B009BE03C /* home_ic_pick@2x.png */; };
 		A3CF64A51EF12F46009BE03C /* CALayer+FSUI.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CF64A41EF12F46009BE03C /* CALayer+FSUI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A3424BD51F009FFC005CD7E2 /* my_ic_coupon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my_ic_coupon@3x.png"; sourceTree = "<group>"; };
+		A3424BD71F00A003005CD7E2 /* my_ic_coupon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my_ic_coupon@2x.png"; sourceTree = "<group>"; };
 		A35133FB1EEF7925000313CB /* FSCustomButtonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSCustomButtonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35133FF1EEF7925000313CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A35134011EEF7925000313CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,6 +39,8 @@
 		A35134161EEF7987000313CB /* FSCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCustomButton.h; sourceTree = "<group>"; };
 		A35134171EEF7987000313CB /* FSCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCustomButton.m; sourceTree = "<group>"; };
 		A351341A1EEFC724000313CB /* FSCommenDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSCommenDefine.h; sourceTree = "<group>"; };
+		A38C0DB81EF6602B00822CAA /* btn_voice_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_voice_play@2x.png"; sourceTree = "<group>"; };
+		A38C0DBA1EF6679700822CAA /* graphicreview_group_star_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "graphicreview_group_star_red@2x.png"; sourceTree = "<group>"; };
 		A3CF645D1EF0DB86009BE03C /* jkj_sort_ic_baby_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jkj_sort_ic_baby_s.png; sourceTree = "<group>"; };
 		A3CF645F1EF0E44B009BE03C /* home_ic_pick@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_ic_pick@2x.png"; sourceTree = "<group>"; };
 		A3CF64A31EF12F46009BE03C /* CALayer+FSUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+FSUI.h"; sourceTree = "<group>"; };
@@ -69,6 +77,10 @@
 		A35133FD1EEF7925000313CB /* FSCustomButtonDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A3424BD71F00A003005CD7E2 /* my_ic_coupon@2x.png */,
+				A3424BD51F009FFC005CD7E2 /* my_ic_coupon@3x.png */,
+				A38C0DBA1EF6679700822CAA /* graphicreview_group_star_red@2x.png */,
+				A38C0DB81EF6602B00822CAA /* btn_voice_play@2x.png */,
 				A3CF645F1EF0E44B009BE03C /* home_ic_pick@2x.png */,
 				A3CF645D1EF0DB86009BE03C /* jkj_sort_ic_baby_s.png */,
 				A35134151EEF794D000313CB /* FSCustomBUtton */,
@@ -167,8 +179,12 @@
 			files = (
 				A351340E1EEF7925000313CB /* LaunchScreen.storyboard in Resources */,
 				A351340B1EEF7925000313CB /* Assets.xcassets in Resources */,
+				A3424BD81F00A003005CD7E2 /* my_ic_coupon@2x.png in Resources */,
+				A38C0DBB1EF6679700822CAA /* graphicreview_group_star_red@2x.png in Resources */,
 				A3CF64601EF0E44B009BE03C /* home_ic_pick@2x.png in Resources */,
 				A3CF645E1EF0DB86009BE03C /* jkj_sort_ic_baby_s.png in Resources */,
+				A3424BD61F009FFC005CD7E2 /* my_ic_coupon@3x.png in Resources */,
+				A38C0DB91EF6602B00822CAA /* btn_voice_play@2x.png in Resources */,
 				A35134091EEF7925000313CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

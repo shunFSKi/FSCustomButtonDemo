@@ -105,19 +105,19 @@ CGPointGetCenterWithSize(CGSize size) {
 
 #pragma mark - UIEdgeInsets
 
-/// 获取UIEdgeInsets在水平方向上的值
+// 获取UIEdgeInsets在水平方向上的值
 CG_INLINE CGFloat
 UIEdgeInsetsGetHorizontalValue(UIEdgeInsets insets) {
     return insets.left + insets.right;
 }
 
-/// 获取UIEdgeInsets在垂直方向上的值
+// 获取UIEdgeInsets在垂直方向上的值
 CG_INLINE CGFloat
 UIEdgeInsetsGetVerticalValue(UIEdgeInsets insets) {
     return insets.top + insets.bottom;
 }
 
-/// 将两个UIEdgeInsets合并为一个
+// 将两个UIEdgeInsets合并为一个
 CG_INLINE UIEdgeInsets
 UIEdgeInsetsConcat(UIEdgeInsets insets1, UIEdgeInsets insets2) {
     insets1.top += insets2.top;
