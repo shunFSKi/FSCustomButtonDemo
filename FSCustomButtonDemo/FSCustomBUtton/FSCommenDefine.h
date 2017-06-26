@@ -9,7 +9,6 @@
 #define ArgumentToString(macro) #macro
 #define ClangWarningConcat(warning_name) ArgumentToString(clang diagnostic ignored warning_name)
 
-// 参数可直接传入 clang 的 warning 名，warning 列表参考：http://fuckingclangwarnings.com/
 #define BeginIgnoreClangWarning(warningName) _Pragma("clang diagnostic push") _Pragma(ClangWarningConcat(#warningName))
 #define EndIgnoreClangWarning _Pragma("clang diagnostic pop")
 
