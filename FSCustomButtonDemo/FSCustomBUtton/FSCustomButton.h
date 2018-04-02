@@ -52,4 +52,13 @@ typedef enum : NSUInteger {
  */
 @property(nonatomic, strong) UIColor *highlightedBorderColor;
 
+@property(nonatomic, copy) NSString *badgeNumber;
+
 @end
+
+@interface FSBadgeLab : UILabel
+
+@property(nonatomic, assign) UIEdgeInsets contentEdgeInsets;
+
+@end
+

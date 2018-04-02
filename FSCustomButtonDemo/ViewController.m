@@ -31,6 +31,7 @@
     button.buttonImagePosition = FSCustomButtonImagePositionTop;
     button.titleEdgeInsets = UIEdgeInsetsMake(10, 0, 0, 0);
     [self.view addSubview:button];
+    button.badgeNumber = @"18";
 //    [button sizeToFit];
     
     FSCustomButton *button2 = [[FSCustomButton alloc] initWithFrame:CGRectMake(100, 120, 100, 80)];
@@ -44,6 +45,7 @@
     button2.buttonImagePosition = FSCustomButtonImagePositionBottom;
     button2.imageEdgeInsets = UIEdgeInsetsMake(10, 0, 0, 0);
     [self.view addSubview:button2];
+    button2.badgeNumber = @"99+";
     
     FSCustomButton *button3 = [[FSCustomButton alloc] initWithFrame:CGRectMake(220, 20, 100, 80)];
     button3.adjustsTitleTintColorAutomatically = YES;
@@ -57,6 +59,7 @@
     button3.imageEdgeInsets = UIEdgeInsetsMake(10, 0, 0, 0);
     [self.view addSubview:button3];
     [button3 sizeToFit];
+    button3.badgeNumber = @"9";
     
     FSCustomButton *button4 = [[FSCustomButton alloc] initWithFrame:CGRectMake(220, 120, 100, 80)];
     button4.adjustsTitleTintColorAutomatically = YES;

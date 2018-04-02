@@ -13,6 +13,7 @@
 @interface FSCustomButton ()
 @property(nonatomic, strong) CALayer *highlightedBackgroundLayer;
 @property(nonatomic, strong) UIColor *originBorderColor;
+@property (nonatomic,strong) FSBadgeLab *badgeLabel;
 @end
 
 @implementation FSCustomButton
@@ -46,6 +47,7 @@
     self.contentEdgeInsets = UIEdgeInsetsMake(1, 0, 1, 0);
     
     self.buttonImagePosition = FSCustomButtonImagePositionLeft;//默认布局
+    
 }
 
 - (void)layoutSubviews
@@ -264,6 +266,19 @@
 
 #pragma mark setter
 
+- (void)setBadgeNumber:(NSString *)badgeNumber
+{
+    _badgeNumber = badgeNumber;
+    self.badgeLabel.text = badgeNumber;
+    [self.badgeLabel sizeToFit];
+    if (self.badgeLabel.text.length == 1) {
+        CGFloat diameter = fmax(CGRectGetWidth(self.badgeLabel.bounds), CGRectGetHeight(self.badgeLabel.bounds));
+        self.badgeLabel.frame = CGRectMake(CGRectGetMinX(self.badgeLabel.frame), CGRectGetMinY(self.badgeLabel.frame), diameter, diameter);
+    }
+    self.badgeLabel.layer.cornerRadius = flat(CGRectGetHeight(self.badgeLabel.bounds) / 2.0);
+    self.badgeLabel.frame = CGRectSetXY(self.badgeLabel.frame, CGRectGetMaxX(self.imageView.frame) - 8, CGRectGetMinY(self.imageView.frame) - 5);
+}
+
 - (void)setButtonImagePosition:(FSCustomButtonImagePosition)buttonImagePosition
 {
     _buttonImagePosition = buttonImagePosition;
@@ -405,5 +420,38 @@
     }
 }
 
+#pragma mark LazyLoad
+
+- (FSBadgeLab *)badgeLabel
+{
+    if (!_badgeLabel) {
+        _badgeLabel = [[FSBadgeLab alloc]init];
+        [self addSubview:self.badgeLabel];
+        _badgeLabel.backgroundColor = [UIColor colorWithRed:240.0f/255.0f green:71.0f/255.0f blue:71.0f/255.0f alpha:1.0f];
+        _badgeLabel.textColor = [UIColor whiteColor];
+        _badgeLabel.textAlignment = NSTextAlignmentCenter;
+        _badgeLabel.contentEdgeInsets = UIEdgeInsetsMake(2, 5, 2, 5);
+        _badgeLabel.clipsToBounds = YES;
+        _badgeLabel.font = [UIFont systemFontOfSize:11];
+    }
+    return _badgeLabel;
+}
 
 @end
+
+@implementation FSBadgeLab
+
+- (void)setContentEdgeInsets:(UIEdgeInsets)contentEdgeInsets {
+    _contentEdgeInsets = contentEdgeInsets;
+    [self setNeedsDisplay];
+}
+
+- (CGSize)sizeThatFits:(CGSize)size {
+    size = [super sizeThatFits:CGSizeMake(size.width - UIEdgeInsetsGetHorizontalValue(self.contentEdgeInsets), size.height - UIEdgeInsetsGetVerticalValue(self.contentEdgeInsets))];
+    size.width += UIEdgeInsetsGetHorizontalValue(self.contentEdgeInsets);
+    size.height += UIEdgeInsetsGetVerticalValue(self.contentEdgeInsets);
+    return size;
+}
+
+@end
+
