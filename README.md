@@ -4,6 +4,7 @@
 **详细分析文档请点这里**：[iOS一步步实现一个高度自定义UIButton控件](http://www.jianshu.com/p/4603e9bbba56)
 ## 效果图
 ![FSCustomButtonDemo.gif](http://upload-images.jianshu.io/upload_images/1792044-beb61c6dc89a4485.gif?imageMogr2/auto-orient/strip)
+![FSCustomButton](https://github.com/shunFSKi/ImageResources/blob/master/FSCustomButton.png)
 ## 使用方式
 将demo中的FSCustomButton文件夹拖入项目，导入**FSCustomButton.h**
 
