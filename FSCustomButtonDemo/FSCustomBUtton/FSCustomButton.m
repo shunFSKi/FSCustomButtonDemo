@@ -269,6 +269,11 @@
 - (void)setBadgeNumber:(NSString *)badgeNumber
 {
     _badgeNumber = badgeNumber;
+    if (badgeNumber.length == 0) {
+        self.badgeLabel.hidden = YES;
+    } else {
+        self.badgeLabel.hidden = NO;
+    }
     self.badgeLabel.text = badgeNumber;
     [self.badgeLabel sizeToFit];
     if (self.badgeLabel.text.length == 1) {
